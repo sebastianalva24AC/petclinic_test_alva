@@ -22,7 +22,8 @@ import com.tecsup.petclinic.util.TObjectCreator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.bean.override.mockito.MockitoBean; // New import
+import org.springframework.boot.test.mock.mockito.MockBean;
+ // New import
 
 @Slf4j
 //@ExtendWith(MockitoExtension.class)
@@ -35,7 +36,8 @@ public class PetServiceMockitoTest {
     @Autowired
     private PetMapper petMapper;
 
-    @MockitoBean
+    @MockBean
+
     private PetRepository repository;
 
 
